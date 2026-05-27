@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: ace-runtime-config
+
+data:
+  ace-runtime.properties: |
+    dynamicr#SOAP Request.webServiceURL=http://backend-service:7800/simulator
+    dynamicr#HTTP Input.URLSpecifier=/projectd

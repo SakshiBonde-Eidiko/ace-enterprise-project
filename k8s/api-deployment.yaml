@@ -19,7 +19,8 @@ spec:
     spec:
       containers:
       - name: api-container
-        image: api-service:v1
+
+        image: IMAGE_PLACEHOLDER
 
         imagePullPolicy: Never
 
@@ -29,3 +30,12 @@ spec:
 
         ports:
         - containerPort: 7800
+
+        volumeMounts:
+        - name: override-volume
+          mountPath: /home/aceuser/ace-server/overrides
+
+      volumes:
+      - name: override-volume
+        configMap:
+          name: ace-runtime-config
