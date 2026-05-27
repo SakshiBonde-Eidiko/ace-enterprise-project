@@ -21,7 +21,8 @@ pipeline {
 
             steps {
 
-                git 'https://github.com/SakshiBonde-Eidiko/ace-enterprise-project.git'
+                git branch: 'main',
+                url: 'https://github.com/SakshiBonde-Eidiko/ace-enterprise-project.git'
             }
         }
 
