@@ -19,8 +19,10 @@ spec:
     spec:
       containers:
       - name: backend-container
-        image: ace-backend-service:v1
-        imagePullPolicy: Never
+
+        image: BACKEND_IMAGE_PLACEHOLDER
+
+        imagePullPolicy: Always
 
         env:
         - name: LICENSE

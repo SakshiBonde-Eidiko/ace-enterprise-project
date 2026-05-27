@@ -20,9 +20,9 @@ spec:
       containers:
       - name: api-container
 
-        image: IMAGE_PLACEHOLDER
+        image: API_IMAGE_PLACEHOLDER
 
-        imagePullPolicy: Never
+        imagePullPolicy: Always
 
         env:
         - name: LICENSE
